@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "gpu")
+@Table(name = "gpus")
 public class Gpu {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -20,4 +20,5 @@ public interface CpuRepository extends JpaRepository<Cpu, Long> {
 
 	@Query("SELECT c FROM Cpu c WHERE c.socketType = 'LGA1700'")
 	List<Cpu> findBySocketLGA1700();
+
 }

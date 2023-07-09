@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "motherboard")
+@Table(name = "motherboards")
 public class Motherboard {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

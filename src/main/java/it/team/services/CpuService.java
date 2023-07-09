@@ -3,6 +3,8 @@ package it.team.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +41,17 @@ public class CpuService {
 		} else {
 			return Optional.empty();
 		}
+	}
+
+	@Transactional
+	public void insertCpu() {
+		Cpu cpu = new Cpu();
+		cpu.setNome("5800x3D");
+		cpu.setPrezzo(350);
+		cpu.setSocketType(SocketType.AM5);
+		cpu.setPunteggio(300);
+
+		cpuRepository.save(cpu);
 	}
 
 	public boolean deleteCpu(Long id) {

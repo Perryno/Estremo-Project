@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "processori")
+@Table(name = "cpus")
 public class Cpu {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

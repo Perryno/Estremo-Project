@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "case")
+@Table(name = "cases")
 public class PCCase {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
