@@ -21,7 +21,7 @@ import it.team.repositories.MotherboardRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/motherboard")
+@RequestMapping("/motherboard")
 public class MotherboardController {
 
 	@Autowired
@@ -40,6 +40,16 @@ public class MotherboardController {
 		} else {
 			return ResponseEntity.notFound().build();
 		}
+	}
+
+	@GetMapping("/socket/LGA1700")
+	public List<Motherboard> findBySocketLGA1700() {
+		return motherboardRepository.findBySocketType(SocketType.LGA1700);
+	}
+
+	@GetMapping("/socket/AM5")
+	public List<Motherboard> findBySocketAM5() {
+		return motherboardRepository.findBySocketType(SocketType.AM5);
 	}
 
 	@GetMapping("/socket/{socketType}")

@@ -20,7 +20,7 @@ import it.team.services.SsdService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/ssd")
+@RequestMapping("/ssd")
 public class SsdController {
 
 	@Autowired

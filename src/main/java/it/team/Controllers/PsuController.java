@@ -20,7 +20,7 @@ import it.team.repositories.PsuRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/psu")
+@RequestMapping("/psu")
 public class PsuController {
 
 	@Autowired

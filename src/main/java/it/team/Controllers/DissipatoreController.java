@@ -20,7 +20,7 @@ import it.team.repositories.DissipatoreRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/dissipatore")
+@RequestMapping("/dissipatore")
 public class DissipatoreController {
 
 	@Autowired

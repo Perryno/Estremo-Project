@@ -20,7 +20,7 @@ import it.team.repositories.GpuRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/gpu")
+@RequestMapping("/gpu")
 public class GpuController {
 
 	@Autowired

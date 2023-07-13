@@ -20,7 +20,7 @@ import it.team.repositories.RamRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/ram")
+@RequestMapping("/ram")
 public class RamController {
 
 	@Autowired

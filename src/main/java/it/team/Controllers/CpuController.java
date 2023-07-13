@@ -39,6 +39,16 @@ public class CpuController {
 		return cpuRepository.findById(id).orElse(null);
 	}
 
+	@GetMapping("/socket/LGA1700")
+	public List<Cpu> findBySocketLGA1700() {
+		return cpuRepository.findBySocketType(SocketType.LGA1700);
+	}
+
+	@GetMapping("/socket/AM5")
+	public List<Cpu> findBySocketAM5() {
+		return cpuRepository.findBySocketType(SocketType.AM5);
+	}
+
 	@GetMapping("/socket/{socket}")
 	public List<Cpu> getCpusBySocket(@PathVariable SocketType socketType) {
 		return cpuRepository.findBySocketType(socketType);

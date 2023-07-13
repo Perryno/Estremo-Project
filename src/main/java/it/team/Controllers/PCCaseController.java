@@ -20,7 +20,7 @@ import it.team.repositories.PCCaseRepository;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-@RequestMapping("/api/pccase")
+@RequestMapping("/pccase")
 public class PCCaseController {
 
 	@Autowired
